@@ -277,3 +277,5 @@ gem 'minitest', '~> 5.0', require: false
 Dir['Gemfile.local*'].each do |file|
   eval_gemfile file
 end
+
+gem "sassc", "~> 2.4", group: :development
