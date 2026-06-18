@@ -6187,6 +6187,19 @@ Setting.create_if_not_exists(
   frontend:    true,
 )
 
+Setting.create_if_not_exists(
+  title:       __("'Ticket Participants'"),
+  name:        "ticket_participants_enabled",
+  area:        "Ticket::Participants",
+  description: __("Enable the participant feature. Allows adding additional customers as participants on tickets."),
+  options:     {},
+  state:       false,
+  preferences: {
+    permission: ["admin.ticket"],
+  },
+  frontend:    true,
+)
+
 # TODO: Unused in desktop view, drop later.
 Setting.create_if_not_exists(
   title:       __('Richtext Bubble Menu'),
